@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- by izzaldeen malakh -->
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .col1 {
+            flex: 1;
+            /* 1+1+1+1=4 so the flex stage is 1 for 4 columns in the first row*/
+            background-color: rgb(75, 213, 255);
+            padding: 20px;
+            /* 20px inside the block */
+            margin: 10px;
+            /* 20px outside the block */
+
+        }
+
+        .col2 {
+
+            flex: 2;
+            /* 1+2=3 so the flex stage is 1 and 2 for 2 columns in the sec row */
+            padding: 20px;
+            /* 20px inside the block */
+            margin: 10px;
+            /* 20px outside the block */
+            background-color: rgb(75, 213, 255);
+
+
+        }
+
+        .col3 {
+
+            flex: 3;
+            /* 2+3=5 so the flex stage is 2 and 3 for 2 columns in the third row */
+            padding: 20px;
+            /* 20px inside the block */
+            margin: 10px;
+            /* 20px outside the block */
+            background-color: rgb(75, 213, 255);
+
+
+
+        }
+
+        .col4 {
+
+            flex: 4;
+            /* if you need to try another flex stages for example: 1+4=5 --> 1/5 and 4/5 */
+            padding: 20px;
+            margin: 10px;
+            background-color: rgb(75, 213, 255);
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col1">1/4</div>
+        <div class="col1">1/4</div>
+        <div class="col1">1/4</div>
+        <div class="col1">1/4</div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col1">1/3</div>
+        <div class="col2">2/3</div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col2">2/5</div>
+        <div class="col3">3/5</div>
+
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>

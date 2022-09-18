@@ -1,0 +1,51 @@
+
+ /*body *{
+            outline: 3px solid pink;
+        }*/
+.container{
+    width: 1000px;
+    background-color: silver;
+    margin: 10px ;
+    padding: 18px;
+
+    
+}
+.top-nav {
+    height: 100px;
+    background-color: green;
+    margin: 20px;
+    vertical-align: top;
+    margin-bottom: 12px;
+    
+}
+.left-nav {
+    height: 300px;
+    width: 210px;
+    background-color: blue;
+    margin: 20px;
+    display: inline-block;
+}
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    margin: 20px;
+    display: block;
+    display: inline-block;
+    vertical-align: top;
+}
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+.advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+    margin: 20px;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Dojo weather</title>
+    <link rel="stylesheet" href="dojoweather.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="title">DojoWeather</h1>
+        <ul id="list1">
+            <p id="Burbank" onclick="showalert()" href="#">Butbank</p>
+            <p id="chicago" onclick="showalert()" href="#">Chicago</p>
+            <p id="dallas" onclick="showalert()" href="#">Dallas</p>
+        </ul>
+    </header>
+    
+
+    <div class="head">
+        <h1 id="title2">San Jose</h1>
+        <p id="show"> show tempreture in
+        <select id="selecttemp"  onchange="changetemp(this)">
+            <option value="c"  id="c" > C° </option>
+            <option value="f"  id="f"  > F° </option>
+        </select></p>
+    </div>
+    <hr id="hr">
+
+    <div class="boxes-container">
+        <div class="box1">
+            <p id="day">Today</p>
+            <img id="some-rain" src="assets/some_rain.png" alt="rain">
+            <p id="stutus1">some rain</p>
+            <div id="degrees">
+                <p id="degree1">24°</p>
+                <p id="degree2">18°</p>
+            </div>
+        </div>
+        <div class="box2">
+            <p id="day">Tomorrow</p>
+            <img id="some-rain" src="assets/some_sun.png" alt="rain">
+            <p id="stutus1">some sun</p>
+            <div id="degrees">
+                <p id="degree3">27°</p>
+                <p id="degree4">19°</p>
+            </div>
+        </div>
+        <div class="box3">
+            <p id="day">Friday</p>
+            <img id="some-rain" src="assets/some_clouds.png" alt="cloud">
+            <p id="stutus1">some cloud</p>
+            <div id="degrees">
+                <p id="degree5">21°</p>
+                <p id="degree6">16°</p>
+            </div>
+        </div>
+        <div class="box4">
+            <p id="day">Saturday</p>
+            <img id="some-rain" src="assets/some_sun.png" alt="sun">
+            <p id="stutus1">some sun</p>
+            <div id="degrees">
+                <p id="degree7">26°</p>
+                <p id="degree8">21°</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert-box">
+        <img id="cookie-img" src="assets/cookie.png" alt="cookie">
+        <div class="content">
+            <h1 id="stop">Stop! cookie time</h1>
+            <p id="content">
+                We use cookies (sadly not the edible ones) to personalize content and ads<br> to provide social media features and to
+analyse our traffc.  <a  href="#">Read More...</a>
+        </div>
+        <button id="accept-button" onclick="dismiss()" > I Accept </button>
+
+
+
+    </div>
+
+
+<script src="dojoweather.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="dojonary.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Dojonary</h1>
+        <input id="search" type="text" placeholder="search">
+        <button id="login" onclick="change()">Login</button>
+    </header>
+
+    <div class="container">
+        <div class="container-one">
+            <div class="box1">
+                <div class="align1">
+                    <p id="ninja">ninja</p>
+                    <p id="noun"><i>noun</i></p>
+                    <pi id="des">plural:<i>ninjas</i></p>
+                        <button  class="likes" onclick="alertt()"><b>13 likes</b></button>
+                </div>
+                <p id="content">A practitioner skilled in the<br>
+                    <u id="jap">Japanese</u> art of <u id="nin">ninjutsu</u>
+                </p>
+
+            </div>
+            <div class="box3">
+                <p id="box3content">Dojonary is<br> defined by <b>YOU</b></p>
+                <button id="add" onclick="hide(this)" >Add Definition</button>
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="align1">
+                <p id="ninja">ninja</p>
+                <p id="noun"><i>noun</i></p>
+                <p id="des">plural:<i>ninjas</i></p>
+                <button class="likes"><b>37 likes</b></button>
+            </div>
+            <p id="content1">A<u> programmer</u> who breaks <br> down problems
+                with <u id="zen">zen</u>-like<br> focus
+            </p>
+        </div>
+    </div>
+    <script>
+        function change(){
+        document.getElementById("login").innerText = "Logout" ; 
+        }
+        function hide(e){
+            e.remove();
+        }
+        function alertt(){
+            alert("Ninja was liked");
+
+        }
+    </script>
+</body>
+
+</html>

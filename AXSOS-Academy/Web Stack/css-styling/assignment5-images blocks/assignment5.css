@@ -1,0 +1,52 @@
+.container{
+    min-height: 800px;
+    width: 680px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0px auto;
+    outline:auto; 
+}
+.h1{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+.top{
+    width: 670px;
+    background-color: rgb(44, 245, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img1{
+    display:flex;
+    align-items: center;
+  
+}
+div.container div.middle{
+    width: 670px;
+    background-color: rgb(255, 153, 245);
+}
+
+.img2{
+    display: inline-block;
+    margin-left: 60px;
+}
+div.container div.bottom{
+    width: 670px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img3{
+    display: inline-block;
+   
+}
+ .h2{
+    font-size: 6.5px;
+    text-align: center;
+}

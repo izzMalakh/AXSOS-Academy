@@ -1,0 +1,32 @@
+
+.h1 {
+    font-size: 30px;
+    background-color: black;
+    color: azure;
+    min-height: 50px;
+
+}
+
+.h2 {
+    color: rgb(234, 231, 225);
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.a {
+    color: rgb(10, 10, 10);
+    background-color: rgb(124, 151, 240);
+    text-align: right;
+    min-height: 30px;
+    font-size: 30px;
+}
+
+.cload {
+    color: blue;
+    font-size: 70px;
+    background-color: black;
+
+    min-height: 50px;
+}

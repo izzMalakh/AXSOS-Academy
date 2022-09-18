@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-one{
+    display: flex;
+    
+    
+}
+header{
+    background-color: #cccccc;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;   
+    margin-left: 25%;
+    margin-bottom: 20px;
+
+}
+#title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+#search{
+    width: 300px;
+    height: 30px;
+    border: 3px solid black;
+}
+#login{
+    margin-right: 5%;
+    background-color: #2b78e4;
+    height: 35px;
+    width: 65px;
+    border: 3px solid black;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+.box1{
+    height: auto;
+    width:500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 383px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+
+}
+#ninja{
+    font-size: 40px;
+    font-family: 'Lucida Sans';
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+#noun{
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    margin-left: 40px;
+    margin-top: 20px;
+}
+#des{
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+    margin-left:20px;
+    
+}
+.likes{
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+    margin-left:23px;
+    font-family: 'Lucida Sans';
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffd966;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px black;
+
+}
+#content{
+    margin-right: 70px;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans';
+}
+#jap{
+    color: rgb(0, 115, 255);
+}
+#nin{
+    color: rgb(0, 115, 255);
+}
+#zen{
+    color: rgb(0, 115, 255);
+}
+.box2{
+    height: auto;
+    width:500px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 383px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+#content1{
+    margin-right: 50px;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans';
+}
+.box3{
+    background-color: rgb(255, 255, 255);
+    height: 160px;
+    margin-left: 20px;
+    width: 232px;
+    border: 4px solid black;
+}
+#box3content{
+    font-family: 'Lucida Sans';
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+
+}
+#add{
+    background-color: #93c47d;
+    width: 195px;
+    height: 35px;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+u{
+    color: #2b78e4;
+
+
+}

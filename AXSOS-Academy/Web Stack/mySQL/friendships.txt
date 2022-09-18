@@ -1,0 +1,35 @@
+use friendships_schema
+INSERT INTO users (first_name,last_name)
+VALUES ('Amy','giver'),('Eli','byers'),('Mraky','Mark'),('Big','Berd'),('Kermit','Frog'),('Big','Bird')
+INSERT INTO friendships (user_id,friend_id)
+VALUES (1,2),(1,4),(1,6),(2,1),(2,3),(2,5),(3,2),(3,5),(4,3),(5,1),(5,6),(6,2),(6,3);
+SELECT * FROM users
+JOIN friendships ON users.id = friendships.user_id
+LEFT JOIN users as users2 ON users2.id = friendships.friend_id;
+-- as a table in assignemnt:
+
+select users.first_name, users.last_name, users2.first_name as friend_first_name , users2.last_name as friend_last_name from users
+join friendships on friendships.user_id = users.id
+join users as users2 on users2.id=friendships.friend_id
+
+-- Return all users who are friends with the first user, make sure their names are displayed in results:
+
+select users.first_name, users.last_name, users2.first_name as friend_first_name , users2.last_name as friend_last_name from users
+join friendships on friendships.user_id = users.id
+join users as users2 on users2.id=friendships.friend_id
+where users.id=1
+-- Return the count of all friendships:
+select count(*) as number_of_friends from friendships
+-- Find out who has the most friends and return the count of their friends.
+SELECT user_id, users.first_name, users.last_name, count(friend_id) as num_of_friends from friendships
+JOIN users ON users.id = friendships.user_id
+GROUP BY user_id
+order by num_of_friends DESC
+LIMIT 3;
+--  Return the friends of the third user in alphabetical order
+SELECT users2.first_name as first_name, users2.last_name as last_name, users.first_name as friends_with FROM users
+JOIN friendships ON users.id = friendships.user_id
+ JOIN users as users2 ON users2.id = friendships.friend_id
+WHERE users.id = 3
+ORDER BY first_name;
+
