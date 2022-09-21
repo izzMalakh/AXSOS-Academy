@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'ninja.css' %}">  
+    <title>ninja game</title>
+</head>
+<body>
+    <h1> Your Gold:{{request.session.count}} </h1>
+    <div class="container">
+        <div class="box">
+            <p> Farm </p>
+            <p> earns (10-20) gold </p>
+            <form action="/process_money" method="post">
+            {% csrf_token %}
+                <button name="button" value="farm">Find Gold!</button>
+            </form>
+            
+        </div>
+        <div class="box">
+            <p> Cave </p>
+            <p> earns (10-20) gold </p>
+            <form action="/process_money" method="post">
+            {% csrf_token %}
+                <button name="button" value="cave">Find Gold!</button>
+            </form>
+        </div>
+        <div class="box">
+            <p> House </p>
+            <p> earns (10-20) gold </p>
+            <form action="/process_money" method="post">
+            {% csrf_token %}
+                <button name="button" value="house">Find Gold!</button>
+            </form>
+        </div>
+        <div class="box">
+            <p> Quest </p>
+            <p> earns/takes (0-50) gold </p>
+            <form action="/process_money" method="post">
+            {% csrf_token %}
+                <button name="button" value="quest">Find Gold!</button>
+            </form>
+        </div>
+    </div>
+    <h2> Activites </h2>
+    <div> 
+        <p>{{request.session.activities}} </p>
+        <p>{{request.session.activities1}} </p>
+        <p>{{request.session.activities2}} </p>
+        <p>{{request.session.activities3}} </p>
+        
+
+    
+
+    </div>
+    
+
+    </div>
+</body>
+</html>
