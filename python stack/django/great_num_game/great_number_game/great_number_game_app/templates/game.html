@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'game.css' %}"> 
+    <title>Great number Game</title>
+</head>
+<body>
+    <p>Hint: {{request.session.random}}</p>
+    <h1>Welcome to great number game</h1>
+    <h2>Im thinking of a number between 1 and 100</h2>
+    <h3>Take a guess!</h3>
+        {% if request.session.status == 'Lose!' %}
+        <p id="lose">{{request.session.status}} </p>
+        {% endif %}
+        {% if request.session.status == 'Too Low!' %}
+        <p id="low">{{request.session.status}} </p>
+        {% endif %}
+        {% if request.session.status == 'Low!' %}
+        <p id="low">{{request.session.status}} </p><br> <span>You are Closer!</span>
+        {% endif %}
+        {% if request.session.status == 'Too high!' %}
+        <p id="high">{{request.session.status}}</p>
+        {% endif %}
+        {% if request.session.status == 'High!' %}
+        <p id="high">{{request.session.status}} </p><br> <span>You are Closer!</span>
+        {% endif %}
+        {% if request.session.status == 'Win!' %}
+        <p id="win">{{request.session.status}} </p>
+        {% endif %}
+        <p> You have 10 efforts <br> Trying Number: {{request.session.guesses}}</p>
+        
+        
+        
+    
+    <form action="/guess" method="POST">
+    {% csrf_token %}
+        <input id="guess_num" type="text" name="guess_num"  min="1" max="100"><br>
+        <input type="submit" name="sub" value="submit">
+        
+    </form>
+    <form action="/destroy">
+        <button id="play" type="submit" name="playagain"> Play Again! </button>
+    </form>
+</body>
+</html>

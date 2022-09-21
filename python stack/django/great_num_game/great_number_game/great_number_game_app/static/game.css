@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#guess_num{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+input{
+    height: 40px;
+    width: 100px;
+    font-family: cursive;
+    font-size: 1.4rem;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+#low ,#high ,#lose{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    font-family: cursive;
+    
+    border: solid 2px black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#win{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+    font-family: cursive;
+    
+    border: solid 2px black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#play{
+    background-color: white;
+    width: 150px;
+    height: 30px;
+}
+span{
+    font-size: 1.4rem;
+    background-color: aqua;
+    font-weight: bold;
+}
