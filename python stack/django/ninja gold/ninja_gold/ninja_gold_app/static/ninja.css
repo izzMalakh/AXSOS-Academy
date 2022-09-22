@@ -1,5 +1,8 @@
 .container{
     display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    
 }
 .box{
     border: solid 2px black;
@@ -7,11 +10,13 @@
     width: 20%;
     margin-right: 30px;
     text-align: center;
+    background-color: rgb(212, 212, 212);
 }
 .container .box p{
     font-size: 1.4rem;
     font-weight: bold;
     font-family: cursive;
+    
 
 }
 button{
@@ -22,4 +27,19 @@ button{
 }
 ul{
     list-style: none;
+}
+#reset{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    
+}
+.act{
+    height: 160px;
+    width: 800px;
+    overflow:scroll;
+    background-color: rgb(216, 215, 215);
+    font-size: 1.1rem;
+    
 }
