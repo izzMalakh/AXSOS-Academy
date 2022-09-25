@@ -51,10 +51,26 @@
     </form>
     <h2> Activites </h2>
     <div class="act"> 
-        {% for elem in request.session.activities%}
-        <p> {{elem}} </p>
+        <!-- {{ request.session.x }} -->
+ 
+        
+    
+        
+            
+        {% for elem in request.session.activities reversed%}
+            {%if "faild" in elem%}
+            <p id="x"> {{elem}} </p>
+            {%else%}
+            <p id="y"> {{elem}} </p>
+            {%endif%}
         {%endfor%}
+            
+            
+           
+        
 
+        
+        
     
 
     </div>
